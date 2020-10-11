@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-require 'bundler/gem_tasks'
 require 'rake/testtask'
 
-Rake::TestTask.new(:test) do |t|
-  t.requires << 'rubocop-rspec'
+begin
+  require 'rspec/core/rake_task'
 
-  t.libs << 'test'
-  t.libs << 'lib'
-  t.test_files = FileList['test/**/*_test.rb']
+  RSpec::Core::RakeTask.new(:spec)
+
+  task default: :spec
+rescue LoadError
+  # no rspec available
 end
-
-task default: :test
