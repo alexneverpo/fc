@@ -1,4 +1,4 @@
-# FC
+# FC &middot; [![CI Status](https://github.com/alexneverpo/fc/workflows/CI/badge.svg)](https://github.com/alexneverpo/fc/actions?query=workflow%3ACI)
 
 A simple file catalog helper.
 
