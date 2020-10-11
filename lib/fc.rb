@@ -21,6 +21,10 @@ class FC
     def name
       @name ||= ::File.basename(path)
     end
+
+    def ext
+      @ext ||= ::File.extname(path).delete!('.')
+    end
   end
 
   attr_reader :path

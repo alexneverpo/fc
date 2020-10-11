@@ -31,4 +31,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'rspec', '~> 3.9'
   spec.add_development_dependency 'rubocop', '~> 0.92.0'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.43', '>= 1.43.2'
+  spec.add_development_dependency 'ruby_jard', '~> 0.3.1'
 end
