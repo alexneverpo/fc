@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/fc'
+require_relative 'lib/fc/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'fc'
@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'A simple file catalog helper.'
   spec.description   = 'Simple but fast.'
-  # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = 'https://github.com/alexneverpo/fc'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
-  # spec.metadata["homepage_uri"] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = spec.homepage
   # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.

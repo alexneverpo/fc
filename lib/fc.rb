@@ -3,8 +3,6 @@
 require 'forwardable'
 
 class FC
-  VERSION = '0.1.0'
-
   module Error
     class DirectoryDoesNotExist < StandardError; end
     class FileDoesNotExist < StandardError; end
