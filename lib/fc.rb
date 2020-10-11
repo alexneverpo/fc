@@ -12,6 +12,7 @@ class FC
 
   class File
     attr_reader :path
+
     def initialize(filepath)
       raise Error::FileDoesNotExist unless ::File.file?(filepath)
 
@@ -27,8 +28,7 @@ class FC
     end
   end
 
-  attr_reader :path
-  attr_reader :files
+  attr_reader :path, :files
 
   extend Forwardable
 
